@@ -77,8 +77,8 @@ jobs:
             VERSION=${{ steps.version.outputs.prop }}
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            deconzcommunity/deconz:latest
-            deconzcommunity/deconz:${{ steps.version.outputs.prop }}
+            deconzcommunity/zshark:latest
+            deconzcommunity/zshark:${{ steps.version.outputs.prop }}
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ steps.version.outputs.prop }}
           labels: |
