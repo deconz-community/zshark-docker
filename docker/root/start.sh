@@ -9,7 +9,7 @@ echo "[zsharkcommunity/zshark] Current zshark version: $ZSHARK_VERSION"
 echo "[zsharkcommunity/zshark] Web UI port: $ZSHARK_WEB_PORT"
 echo "[zsharkcommunity/zshark] Websockets port: $ZSHARK_WS_PORT"
 
-ZSHARK_OPTS="--auto-connect=1"
+ZSHARK_OPTS=${ZSHARK_OPTS:-}
 
 echo "[zsharkcommunity/zshark] Using options" $ZSHARK_OPTS
 
