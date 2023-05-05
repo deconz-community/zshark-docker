@@ -17,7 +17,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
     ZSHARK_NOVNC_PORT=6080 \
     ZSHARK_UID=1000 \
     ZSHARK_GID=1000 \
-    ZSHARK_START_VERBOSE=0
+    ZSHARK_START_VERBOSE=0 \
+    ZSHARK_OPTS=
 
 # Install zshark dependencies
 RUN apt-get update && \
